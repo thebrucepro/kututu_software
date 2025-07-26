@@ -1,0 +1,21 @@
+/deltarune_rpg/
+│
+├── assets/
+│   ├── music/
+│   │    ├── battle_music.wav
+│   │    └── main_theme.wav
+│   └── sfx/
+│        ├── attack.wav
+│        ├── hit.wav
+│        └── victory.wav
+│
+├── main.py
+├── player.py
+├── enemy.py
+├── bullet.py
+├── game_state.py
+├── dialogue.py
+├── world.py
+├── endings.py
+├── utils.py
+├── settings.py
