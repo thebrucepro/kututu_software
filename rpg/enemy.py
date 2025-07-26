@@ -1,9 +1,23 @@
-class Enemy:
-    def __init__(self, name, hp):
-        self.name = name
-        self.hp = hp
-        self.max_hp = hp
+class Battle:
+    def __init__(self, player, enemy):
+        self.player = player
+        self.enemy = enemy
+        self.turn = "player"
 
-    def is_alive(self):
-        return self.hp > 0
-      
+    def player_turn(self):
+        # Lógica del turno del jugador
+        pass
+
+    def enemy_turn(self):
+        # Lógica del turno del enemigo
+        pass
+
+    def battle(self):
+        while self.player.is_alive() and self.enemy.is_alive():
+            if self.turn == "player":
+                self.player_turn()
+                self.turn = "enemy"
+            else:
+                self.enemy_turn()
+                self.turn = "player"
+                
